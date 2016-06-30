@@ -2,10 +2,10 @@
 Ball::Ball() {
 }
 
-void Ball::setup(float _x, float _y, int _dim) {
-	x = _x;      // give some random positioning
-	y = _y;
-	dim = _dim;
+void Ball::setup() {
+	x = ofGetWidth() * .5;      // give some random positioning
+	y = ofGetHeight() * .5;
+	dim = ofRandom(200, 250);
 
 	speedX = ofRandom(-1, 1);           // and random speed and direction
 	speedY = ofRandom(-1, 1);

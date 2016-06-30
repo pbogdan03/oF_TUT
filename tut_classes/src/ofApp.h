@@ -2,7 +2,9 @@
 
 #include "ofMain.h"
 #include "Ball.h"
-#define NBALLS 10
+#include "BallBlue.h"
+#include "BallGreen.h"
+#include "BallRed.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,6 +25,9 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		Ball myBall[NBALLS];
+		vector <Ball> myBall;
+		BallBlue myBlueBall;
+		BallGreen myGreenBall;
+		BallRed myRedBall;
 		
 };
